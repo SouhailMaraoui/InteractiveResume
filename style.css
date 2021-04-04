@@ -1,0 +1,212 @@
+:root
+{
+  --color1:#7E98CE;
+  --color2:#0F161E;
+  --color3:#657587;
+  --color4:#4F565F;
+  --color5:#F67;
+}
+
+body 
+{
+  background-color: #0F161E;
+  color: white;
+}
+
+@media not all and (hover: none) {
+  main
+  {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+/*------------------------------------------------------------
+Projects Table
+*/
+
+.table
+{
+  margin-top: 40px;
+  font-size: 1.1rem;
+  font-weight: 450;
+  color: white;
+  border: 0px solid transparent;
+}
+th
+{
+  color: var(--color4);
+}
+
+.year
+{
+  color: var(--color1);
+}
+
+itms
+{
+  background-color: var(--color3);
+  border : 1px solid var(--color4);
+  border-radius: 20px;
+  padding: 0px 5px 2px 5px;
+  margin-right: 5px;
+}
+subItms
+{
+  font-size: 1rem;
+  background-color: var(--color4);
+  border : 1px solid var(--color2);
+  border-radius: 20px;
+  padding: 0px 5px 0px 5px;
+  margin: -1px;
+}
+
+.link
+{
+  padding-right: 6px;
+}
+
+/*------------------------------------------------------------
+Custom components
+*/
+
+hr
+{
+  color: var(--color3);
+  margin: 0px 4%;
+}
+
+nav
+{
+  padding: 20px 3%;
+}
+
+section
+{
+  height: 100vh;
+  padding: 7% 15%;
+}
+
+h3
+{
+  color: var(--color1);
+}
+h4
+{
+  font-size: 1.5rem;
+  font-weight :320;
+}
+p
+{
+  font-size: 1.3rem;
+  font-weight :320;
+}
+
+mark
+{
+  padding: 0px;
+  background-color: inherit;
+  color: var(--color5);
+}
+.btn
+{
+  border-width: 2px;
+  font-size: 1.2rem;
+  font-weight: 450;
+  border-color: var(--color1);
+  color:  var(--color1);
+}
+
+.btn:hover
+{
+  background-color:var(--color1);
+  color:  var(--color2);
+}
+
+.form-control 
+{
+  font-size: 1.2rem;
+  margin: 20px 0px;
+  background-color: #0F161E;
+  border: 0 solid white;
+  border-radius: 0px;
+  border-bottom: 2px solid white;
+}
+
+.form-control:focus
+{
+  margin: 20px 0px;
+  background-color: #0F161E;
+  border: 0 solid white;
+  border-radius: 0px;
+  border-bottom: 2px solid var(--color1);
+  box-shadow: none;
+}
+
+.workItem
+{
+  margin: 60px 0px;
+  border:1px solid white;
+}
+
+.projectTitle, .projectImage
+{
+  position:relative;
+  top: -2.2rem;
+}
+
+
+/*------------------------------------------------------------
+Custom Navigation Bar
+*/
+
+#menu li
+{
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color4);
+  text-decoration: none;
+}
+
+#menu li:hover
+{
+  cursor: pointer;
+  color: var(--color1);
+}
+#menu li[class="active"]
+{
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--color1);
+}
+
+vr {
+  display: block;
+  border-left: 2px solid var(--color4);
+  margin-left: 2px;
+  height: 100px;
+}
+vl {
+  display: block;
+  border-left: 2px solid var(--color4);
+  margin-left: 2px;
+  height: 25px;
+}
+
+#menu {
+  position: fixed;
+  left: 2%;
+  bottom: 0px;
+}
+
+#contacts {
+  position: fixed;
+  right: 3%;
+  bottom: 0px;
+}
+
+
+html
+{
+  scroll-behavior: smooth;
+}
