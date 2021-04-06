@@ -1,0 +1,4 @@
+  
+steps:
+  - name: gcr.io/interactiveresumex/firebase
+    args: ['deploy', '--project=interactiveresumex', '--only=hosting']
