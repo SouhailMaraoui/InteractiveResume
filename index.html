@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
 
     <title>Souhail!</title>
   </head>
@@ -22,6 +22,7 @@
         <div class="content">
             <!--Hi------------------------------------------------------------------------------------------------------------------------------------------------>
             <section id="hi">
+                <div style=" background-image: url('https://mdbcdn.b-cdn.net/img/new/standard/city/041.jpg');"></div>
                 <h3>Hi, I'm</h3>
                 <h1 class="display-1"><b>Souhail Maraoui</b></h1>
                 <br>
@@ -55,77 +56,128 @@
                 </div>
             </section>
 
-            <!--My-Journey---------------------------------------------------------------------------------------------------------------------------------------->
-            <section id="journey">
-                <h1 class="display-1 px-5"><b>&lt;My Journey&gt</b></h1>
-                <hr size="5">
-                <br>
-            </section>
-
-            <!--Featured-Projects-1------------------------------------------------------------------------------------------------------------------------------->
+            <!--Featured-Projects--------------------------------------------------------------------------------------------------------------------------------->
             <section id="projects">
                 <h1 class="display-1 px-5"><b>*My Work*</b></h1>
                 <hr size="5">
                 <div class="container">
-                    <div class="row workItem">
-                        <div class="col-8">
-                            <h4 class="projectTitle">Project1</h4>
-                            <p>Hello! My name is Souhail, and I enjoy learning and building new things. My interest in development started 
-                                back in 2014 in my first year of High School — and later turned out to a hobby I spent most my time doing.</p>
+
+                    <div class="workItem">
+                        <div class="row">
+                            <div class="col-4">
+                                <img class="img-fluid projectImage" src="res/project1.png">
+                            </div>
+                            <div class="col-8">
+                                <h4 class="projectTitle">Cooperatives Stats</h4>
+                                <p>This is the Frontend website for CoStats.<br>
+                                    This project provides an interface for both the cooperative manager to submit relevant data to feed 
+                                    the database, as well as an interface for national admins to keep track of the performance and strength 
+                                    of said cooperatives.</p>
+                                    <p>This is a prototype Backend server of a much larger project made for Cooperation Development Office
+                                        (ODCO: A Government institute to help the development of local cooperatives) in Morocco.
+                                        This backend provide a database that consist of all the registered Cooperatives, and for each its Field,
+                                        Members, Profits and Losses, as well as other indicative of a cooperative performance such as 
+                                        its yearly events, meetings, advertisements, etc.</p>
+                            </div>
                         </div>
-                        <div class="col-4">
-                            <img class="img-fluid projectImage" src="res/project1.png">
+                        <hr>
+                        <div class="row">
+                            <div class="col-10 skills">
+                                <b>BackEnd :</b>
+                                <itms>Spring Boot</itms>
+                                <itms>Google Cloud
+                                    <subItms>App Engine</subItms>
+                                    <subItms>Cloud Build</subItms>
+                                    <subItms>SQL</subItms>
+                                </itms>
+                                <itms>Firebase
+                                    <subItms>Firestore</subItms>
+                                </itms>
+                                <itms>DevOps</itms>
+                            </div>
+                            <div class="col-2 d-flex flex-row-reverse">
+                                <a class="link" target="_blank" href="https://coopstats-106e3.uc.r.appspot.com/"><img height="25px" src="res\link.png"></a>
+                                <a class="link" target="_blank" href="https://github.com/SouhailMaraoui/CoopStats.CoStats"><img height="28px" src="res\github.png"></a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-10 skills">
+                                <b>FrontEnd:</b>
+                                <itms>Node.JS</itms>
+                                <itms>React</itms>
+                                <itms>Axios</itms>
+                                <itms>Firebase
+                                    <subItms>Web Hosting</subItms>
+                                </itms>
+                            </div>
+                            <div class="col-2 d-flex flex-row-reverse">
+                                <a class="link" target="_blank" href="https://coopstats-106e3.web.app/#/Home"><img height="25px" src="res\link.png"></a>
+                                <a class="link" target="_blank" href="https://github.com/SouhailMaraoui/CoopStats.FrontStats"><img height="28px" src="res\github.png"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="workItem">
+                        <div class="row">
+                            <div class="col-8">
+                                <h4 class="projectTitle">Protection Civile</h4>
+                                <p>This project is a software built for Rabat Civil Defense to help digitize their response and optimizing 
+                                    the resources and time spent to respond to incidents.</p>
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid projectImage" src="res/project1.png">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-10 skills">
+                                <itms>Java</itms>
+                                <itms>SQLite</itms>
+                                <itms>Swing</itms>
+                                <itms>OpenStreetMaps</itms>
+                            </div>
+                            <div class="col-2 d-flex flex-row-reverse">
+                            </div>
                         </div>
                     </div>
-                    <div class="row workItem">
-                        <div class="col-4">
-                            <img class="img-fluid projectImage" src="res/project1.png">
+                        
+                    <div class="workItem">
+                        <div class="row">
+                            <div class="col-4">
+                                <img class="img-fluid projectImage" src="res/project1.png">
+                            </div>
+                            <div class="col-8">
+                                <h4 class="projectTitle">3DC</h4>
+                                <p>This was my summer project with the university, a machine learning algorithm that allow you remotely 
+                                    control your computer using nothing but your hands..</p>
+                            </div>
                         </div>
-                        <div class="col-8">
-                            <h4 class="projectTitle">Project1</h4>
-                            <p>Hello! My name is Souhail, and I enjoy learning and building new things. My interest in development started 
-                                back in 2014 in my first year of High School — and later turned out to a hobby I spent most my time doing.</p>
+                        <hr>
+                        <div class="row">
+                            <div class="col-10 skills">
+                                <itms>Python</itms>
+                                <itms>TensorFLow</itms>
+                                <itms>OpenCV2</itms>
+                            </div>
+                            <div class="col-2 d-flex flex-row-reverse">
+                                <a class="link" target="_blank" href="https://github.com/SouhailMaraoui/3DC/"><img height="28px" src="res\github.png"></a>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <!--Featured-Projects-2------------------------------------------------------------------------------------------------------------------------------->
-            <section>
-                <div class="container">
-                    <div class="row workItem">
-                        <div class="col-8">
-                            <h4 class="projectTitle">Project1</h4>
-                            <p>Hello! My name is Souhail, and I enjoy learning and building new things. My interest in development started 
-                                back in 2014 in my first year of High School — and later turned out to a hobby I spent most my time doing.</p>
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid projectImage" src="res/project1.png">
-                        </div>
-                    </div>
-                    <div class="row workItem">
-                        <div class="col-4">
-                            <img class="img-fluid projectImage" src="res/project1.png">
-                        </div>
-                        <div class="col-8">
-                            <h4 class="projectTitle">Project1</h4>
-                            <p>Hello! My name is Souhail, and I enjoy learning and building new things. My interest in development started 
-                                back in 2014 in my first year of High School — and later turned out to a hobby I spent most my time doing.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                <br><br>
 
-            <!--Other-Porjects------------------------------------------------------------------------------------------------------------------------------------>
-            <section>
                 <h2 class="text-center">Other noteworthy projects</h2>
-
                 <table class="table">
                     <thead>
                       <tr>
                         <th class="col-sm-1">Year</th>
-                        <th class="col-sm-5">Title</th>
-                        <th class="col-sm-5">Built with</th>
+                        <th class="col-sm-4">Title</th>
+                        <th class="col-sm-6">Built with</th>
                         <th class="col-sm-1">Links</th>
                       </tr>
                     </thead>
@@ -140,12 +192,13 @@
                                     <subItms>CSS</subItms>
                                     <subItms>JS</subItms>
                                 </itms>
-                                <itms>Firebase Hosting</itms>
+                                <itms>Firebase
+                                    <subItms>Web Hosting</subItms>
+                                </itms>
                             </td>
                             <td class="Links">
-                                <a class="link" href="https://www.github.com"><img height="28px" src="res\github.png"></a>
-                                
-                                <a class="link" href="https://www.github.com"><img height="25px" src="res\link.png"></a>
+                                <a class="link" target="_blank" href="https://github.com/SouhailMaraoui/InteractiveResume"><img height="28px" src="res\github.png"></a>
+                                <a class="link" target="_blank" href="."><img height="25px" src="res\link.png"></a>
                             </td>
                         </tr>
 
@@ -159,9 +212,7 @@
                                 </itms>
                             </td>
                             <td class="Links">
-                                <a class="link" href="https://www.github.com"><img height="28px" src="res\github.png"></a>
-                                
-                                <a class="link" href="https://www.github.com"><img height="25px" src="res\link.png"></a>
+                                <a class="link" target="_blank" href="https://github.com/SouhailMaraoui/metacriticScraper"><img height="28px" src="res\github.png"></a>
                             </td>
                         </tr>
 
@@ -176,24 +227,9 @@
                                 </itms>
                             </td>
                             <td class="Links">
-                                <a class="link" href="https://www.github.com"><img height="28px" src="res\github.png"></a>
+                                <a class="link" target="_blank" href="https://github.com/SouhailMaraoui/iTask"><img height="28px" src="res\github.png"></a>
                                 
-                                <a class="link" href="https://www.github.com"><img height="25px" src="res\link.png"></a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="year">2019</th>
-                            <td class="title">GameArk: A web application to build custom desktops</td>
-                            <td>
-                                <itms>Java EE</itms>
-                                <itms>SQL</itms>
-                                <itms>GlassFish</itms>
-                            </td>
-                            <td class="Links">
-                                <a class="link" href="https://www.github.com"><img height="28px" src="res\github.png"></a>
-                                
-                                <a class="link" href="https://www.github.com"><img height="25px" src="res\link.png"></a>
+                                <a class="link" target="_blank" href="https://com-example-todotest.en.aptoide.com/app"><img height="25px" src="res\link.png"></a>
                             </td>
                         </tr>
 
@@ -206,19 +242,28 @@
                                 <itms>SQLite</itms>
                             </td>
                             <td class="Links">
-                                <a class="link" href="https://www.github.com"><img height="28px" src="res\github.png"></a>
-                                
-                                <a class="link" href="https://www.github.com"><img height="25px" src="res\link.png"></a>
+                                <a class="link" target="_blank" href="https://github.com/SouhailMaraoui/PPMS"><img height="28px" src="res\github.png"></a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="year">2018</th>
+                            <td class="title">Java Fighting Game</td>
+                            <td>
+                                <itms>Java</itms>
+                                <itms>Custom Game Engine</itms>
+                            </td>
+                            <td class="Links">
+                                <a class="link" target="_blank" href="https://github.com/SouhailMaraoui/FightingGame/"><img height="28px" src="res\github.png"></a>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-
             </section>
 
             <!--Contact------------------------------------------------------------------------------------------------------------------------------------------->
             <section id="contact">
-                <h1 class="display-1 px-5"><b>(Contact)</b></h1>
+                <h1 class="display-1 px-5"><b>[Contact]</b></h1>
                 <hr size="5">
 
                 <div class="container">
@@ -233,17 +278,18 @@
                         </div>
                         <div class="col-1"></div>
                         <div class="col-5">
-                            <form>
-                                <div class="form-group">
-                                  <input type="text" class="form-control" id="name" placeholder="Your name">
-                                </div>
+
+                            <form class="gform" method="POST" data-email="example@email.net"
+                            action="https://script.google.com/macros/s/AKfycbyePUFXGMthNiTGyQzQWO4sAh5JAEPM2bg_wVs08xm4UrIPRW7iANr5o0FTpetUJ5Q/exec">
 
                                 <div class="form-group">
-                                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp"  placeholder="Email Address to get back to you">
-                                </div>
+                                  <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
 
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="messae" placeholder="Message">
+                                  
+                                  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"  placeholder="Email Address to get back to you">
+
+                                  
+                                    <input type="text" class="form-control" id="message" name="message" placeholder="Message">
                                   </div>
 
                                 <div class="container">
@@ -262,21 +308,21 @@
     </main>
 
     <div id=menu>
-        <li><a onclick="move(0)">Hi</a><vl>
-        <li><a onclick="move(1)">About Me</a><vl>
-        <li><a onclick="move(2)">My Journey</a><vl>
-        <li><a onclick="move(3)">My Work</a><vl>
-        <li><a onclick="move(6)">Contact</a>
-        <vr>
+        <li onclick="move2(0)"><a>Hi</a><vs>
+        <li onclick="move2(1)"><a>About Me</a><vs>
+        <li onclick="move2(2)"><a>My Work</a><vs>
+        <li onclick="move2(3)"><a>Contact</a><vl>
     </div>
-    <ul id=contacts>
-        <li><a href="#L384">G</a>
-        <li><a href="#details">in</a>
-        <li><a href="#FAQ">@</a>
-    </ul>
+    
+    <div id=contacts>
+        <a target="_blank" href="https://www.linkedin.com/in/smaroui"><img class="img-fluid icon" width="25" src="res/linkedin.png"><vs></a>
+        <a target="_blank" href="https://github.com/SouhailMaraoui"><img class="img-fluid icon" width="25" src="res/github.png"><vs></a>
+        <a target="_blank" href="mailto:smaraoui2@outlook.com"><img class="img-fluid icon" width="24" src="res/email.png"><vl></a>
+    </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="js/sendEmail.js"></script>
 
   </body>
 </html>
