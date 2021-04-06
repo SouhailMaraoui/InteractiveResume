@@ -1,3 +1,0 @@
-steps:
-  - name: gcr.io/coopstats-106e3/firebase
-    args: ['deploy', '--project=interactiveresumex', '--only=hosting']
