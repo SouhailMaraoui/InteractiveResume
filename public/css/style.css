@@ -280,4 +280,14 @@ vs
   box-shadow: 0 0px 15px rgba(145, 92, 182, .1);
 }
 
+button a
+{
+  color: var(--color1);
+  text-decoration: none;
+}
 
+button a:hover
+{
+  color: var(--color2);
+  text-decoration: none;
+}
