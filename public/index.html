@@ -37,7 +37,10 @@
                 <br>
                 <div class="container">
                     <div class="row">
-                        <div class="col-8">
+                        <div class="col-md-3">
+                            <img class="img-fluid text-center" src="res/image.png">
+                        </div>
+                        <div class="col-md-9">
                             <p>Hello! My name is Souhail, and I enjoy learning and building new things. My interest in development started 
                                 back in 2014 in my first year of High School — and later turned out to a hobby I spent most my time doing.</p>
                 
@@ -48,9 +51,6 @@
                             <p>Fast-forward to today, I'm studying in A Pre-Doctoral program in Université de Sherbrooke, and I'll be 
                             starting my PhD program fall of 2021. My main focus these days is polishing the rough edges on the things 
                             I've learned, and find where I can improve.</p>
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid" src="res/image.png">
                         </div>
                     </div>
                 </div>
@@ -64,14 +64,14 @@
 
                     <div class="workItem">
                         <div class="row">
-                            <div class="col-4">
-                                <a target="_blank" href="https://github.com/SouhailMaraoui/CoopStats.CoStats/blob/main/README.md"><img class="img-fluid projectImage" src="res/project1.png"></a>
-                            </div>
-                            <div class="col-8">
+                            <div class="col-md-8">
                                 <h4 class="projectTitle"><a target="_blank" href="https://github.com/SouhailMaraoui/CoopStats.CoStats/blob/main/README.md">Cooperatives Stats</a></h4>
                                 <p>Created a web application to digitize the process of managing, monitoring and assessing local cooperatives.
                                     The website provides an interface for both the cooperative manager to submit relevant data (number f members, earnings...) to feed 
                                     the database, as well as an interface for admins for assessing and monitoring.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <a target="_blank" href="https://github.com/SouhailMaraoui/CoopStats.CoStats/blob/main/README.md"><img class="img-fluid projectImage" src="res/project1.png"></a>
                             </div>
                         </div>
                         <hr>
@@ -79,15 +79,24 @@
                             <div class="col-10 skills">
                                 <b>BackEnd :</b>
                                 <itms>Spring Boot</itms>
-                                <itms>Google Cloud
+
+                                <itms class="bigScreen">Google Cloud
                                     <subItms>App Engine</subItms>
                                     <subItms>Cloud Build</subItms>
                                     <subItms>SQL</subItms>
                                 </itms>
-                                <itms>Firebase
+                                
+                                <itms class="smallScreen">SQL</itms>
+                                <itms class="smallScreen">AppEngine</itms>
+                                <itms class="smallScreen">CloudBuild</itms>
+
+                                <itms class="bigScreen">Firebase
                                     <subItms>Firestore</subItms>
                                 </itms>
+                                <itms class="smallScreen">Firestore</itms>
+                                
                                 <itms>DevOps</itms>
+
                             </div>
                             <div class="col-2 d-flex flex-row-reverse">
                                 <a class="link" target="_blank" href="https://coopstats-106e3.uc.r.appspot.com/"><img height="25px" src="res\link.png"></a>
@@ -101,9 +110,10 @@
                                 <itms>Node.JS</itms>
                                 <itms>React</itms>
                                 <itms>Axios</itms>
-                                <itms>Firebase
+                                <itms class="bigScreen">Firebase
                                     <subItms>Web Hosting</subItms>
                                 </itms>
+                                <itms class="smallScreen">FirebaseHosting</itms>
                             </div>
                             <div class="col-2 d-flex flex-row-reverse">
                                 <a class="link" target="_blank" href="https://coopstats-106e3.web.app/#/Home"><img height="25px" src="res\link.png"></a>
@@ -115,12 +125,12 @@
                     
                     <div class="workItem">
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-md-8">
                                 <h4 class="projectTitle"><a target="_blank" href="https://github.com/SouhailMaraoui/ProtectionCivile/blob/main/README.md">Protection Civile</a></h4>
                                 <p>Work on a software that digitize the process of managing the state ressources, and of dispatching them to incidents to improve the 
                                     efficiency of interventions and optimize the process.</p>
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-4">
                                 <a target="_blank" href="https://github.com/SouhailMaraoui/ProtectionCivile/blob/main/README.md"><img class="img-fluid projectImage" src="res/project2.png"></a>
                             </div>
                         </div>
@@ -141,12 +151,12 @@
                         
                     <div class="workItem">
                         <div class="row">
-                            <div class="col-4">
-                                <a target="_blank" href="https://github.com/SouhailMaraoui/ProtectionCivile/blob/main/README.md"><img class="img-fluid projectImage" src="res/project3.png"></a>
-                            </div>
-                            <div class="col-8">
-                                <h4 class="projectTitle"><a target="_blank" href="https://github.com/SouhailMaraoui/PPMS/blob/main/README.md">Portfolio Project Management System</h4></a>
+                            <div class="col-md-8">
+                                <h4 class="projectTitle"><a target="_blank" href="https://github.com/SouhailMaraoui/PPMS/blob/main/README.md">Projects Management System</h4></a>
                                 <p>Implemnted in collaborations with a PhD condidate the theoretical concepts from his thesis of managing projects and prioritizing them in an Entrerprise.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <a target="_blank" href="https://github.com/SouhailMaraoui/ProtectionCivile/blob/main/README.md"><img class="img-fluid projectImage" src="res/project3.png"></a>
                             </div>
                         </div>
                         <hr>
@@ -182,14 +192,21 @@
                             <td class="year">2021</th>
                             <td class="title"><a target="_blank" href="https://github.com/SouhailMaraoui/InteractiveResume/blob/main/README.md">Current Portfolio</td></a>
                             <td>
-                                <itms>Static Website
+                                <itms class="bigScreen">Static Website
                                     <subItms>HTML</subItms>
                                     <subItms>CSS</subItms>
                                     <subItms>JS</subItms>
                                 </itms>
-                                <itms>Firebase
+                                <itms class="smallScreen">HTML</itms>
+                                <itms class="smallScreen">CSS</itms>
+                                <itms class="smallScreen">JS</itms>
+
+                                <itms class="bigScreen">Firebase
                                     <subItms>Web Hosting</subItms>
                                 </itms>
+                                <itms class="smallScreen">FirebaseHosting</itms>
+
+                                <itms>DevOps</itms>
                             </td>
                             <td class="Links">
                                 <a class="link" target="_blank" href="https://github.com/SouhailMaraoui/InteractiveResume"><img height="28px" src="res\github.png"></a>
@@ -202,9 +219,12 @@
                             <td class="title"><a target="_blank" href="https://github.com/SouhailMaraoui/metacriticScraper/blob/main/README.md">Metacritic Scraper</td></a>
                             <td>
                                 <itms>Java</itms>
-                                <itms>NoSQL
+
+                                <itms class="bigScreen">NoSQL
                                     <subItms>XML</subItms>
                                 </itms>
+                                <itms class="smallScreen">NoSQL:XML</itms>
+
                             </td>
                             <td class="Links">
                                 <a class="link" target="_blank" href="https://github.com/SouhailMaraoui/metacriticScraper"><img height="28px" src="res\github.png"></a>
@@ -216,10 +236,13 @@
                             <td class="title"><a target="_blank" href="https://github.com/SouhailMaraoui/iTask/blob/main/README.md">iTask : Gamified Todo app</td></a>
                             <td>
                                 <itms>Android Studio</itms>
-                                <itms>Firebase
+
+                                <itms class="bigScreen">Firebase
                                     <subItms>Authentication</subItms>
                                     <subItms>Firestore</subItms>
                                 </itms>
+                                <itms class="smallScreen">FirebaseAuthentication</itms>
+                                <itms class="smallScreen">FireStore</itms>
                             </td>
                             <td class="Links">
                                 <a class="link" target="_blank" href="https://github.com/SouhailMaraoui/iTask"><img height="28px" src="res\github.png"></a>
@@ -245,7 +268,7 @@
                             <td class="title"><a target="_blank" href="https://github.com/SouhailMaraoui/FightingGame/blob/main/README.md">Java Fighting Game</td></a>
                             <td>
                                 <itms>Java</itms>
-                                <itms>Custom Game Engine</itms>
+                                <itms>GameEngines</itms>
                             </td>
                             <td class="Links">
                                 <a class="link" target="_blank" href="https://github.com/SouhailMaraoui/FightingGame/"><img height="28px" src="res\github.png"></a>
@@ -262,7 +285,7 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-md-6">
                             <br>
                             <p>In my goal to start gaining the valuable international experience, I've made the decision to find a part-time job, 
                             to not only continue my never ending path of learning, but also to learn more about the Canadian culture that I 
@@ -270,9 +293,8 @@
 
                             <p>If you liked my profile and have an offer for me or just want to discuss anything, my inbox is always open.</p>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-5">
-
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
                             <form class="gform" method="POST" data-email="example@email.net"
                             action="https://script.google.com/macros/s/AKfycbyePUFXGMthNiTGyQzQWO4sAh5JAEPM2bg_wVs08xm4UrIPRW7iANr5o0FTpetUJ5Q/exec">
 

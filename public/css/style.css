@@ -7,6 +7,11 @@
   --color5:#F67;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body 
 {
   background-color: #0F161E;
@@ -15,6 +20,26 @@ body
   background-repeat: no-repeat;
   color: white;
 }
+
+section
+{
+  height: 100vh;
+  padding:  10% 15%;
+  margin-top:75px;
+}
+
+#projects
+{
+  height:250vh;
+}
+
+#contacts {
+  position: fixed;
+  right: 3%;
+  bottom: 0px;
+}
+
+
 
 /* @media not all and (hover: none) {
   main
@@ -85,15 +110,8 @@ nav
   padding: 20px 3%;
 }
 
-section
-{
-  height: 100vh;
-  padding: 10% 15%;
-}
-#projects
-{
-  height:250vh;
-}
+
+
 
 h3
 {
@@ -218,7 +236,7 @@ vl {
   display: block;
   border-left: 2px solid var(--color4);
   margin-left: 2px;
-  height: 100px;
+  height: 20px;
 }
 vm {
   display: block;
@@ -258,11 +276,7 @@ vs
   line-height:30px;
 }
 
-#contacts {
-  position: fixed;
-  right: 3%;
-  bottom: 0px;
-}
+
 
 .icon
 {
@@ -290,4 +304,78 @@ button a:hover
 {
   color: var(--color2);
   text-decoration: none;
+}
+
+/*------------------------------------------------------------
+Form
+*/
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+:-moz-placeholder {
+  font-style: italic;  
+}
+::-moz-placeholder {
+  font-style: italic;  
+}
+:-ms-input-placeholder {  
+  font-style: italic; 
+}
+
+.form-control:disabled, .form-control[readonly] {
+  background-color: var(--color2);
+  opacity: 0.6;
+}
+
+
+
+.smallScreen
+{
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .smallScreen
+  {
+    display:initial;
+  }
+  .bigScreen
+  {
+    display: none;
+  }
+  #menu
+  {
+    visibility: hidden;
+  }
+  body 
+  {
+    background-image: url(../res/wp1.png);
+    overflow: hidden;
+  }
+  section, #projects
+  {
+    height:initial;
+    padding:  10% 7%;
+  }
+  #hi
+  {
+    height:80vh;
+  }
+  .navbar
+  {
+    position: relative;
+    top: 0px;
+  }
+  #contacts
+  {
+    right: -3px;
+  }
+
+  .projectImage
+  {
+    top: -0.75rem;
+    padding-left: 10px;
+
+  }
 }

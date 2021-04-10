@@ -57,24 +57,36 @@
     var form = event.target;
     var data = getFormData(form);         // get the values submitted in the form
 
-    disableAllButtons(form);
-    var url = form.action;
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', url);
-    // xhr.withCredentials = true;
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function() {
-        //console.log(xhr.status, xhr.statusText);
-        //console.log(xhr.responseText);
-        return;
-    };
-    // url encode form data for sending as post data
-    var encoded = Object.keys(data).map(function(k) {
-        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
-    }).join('&');
-    xhr.send(encoded);
-  
-    setTimeout(() => {  showSuccess(form); }, 1000);
+    if(data.name.length===0 || data.message.length===0 || data.email.length===0)
+    {
+      showText(form,"Please fill all the fields");
+      setTimeout(() => {  showText(form,"Send"); }, 1000);
+      
+    }
+
+    else
+    {
+      disableAll(form);
+      var url = form.action;
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', url);
+      // xhr.withCredentials = true;
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.onreadystatechange = function() {
+          //console.log(xhr.status, xhr.statusText);
+          //console.log(xhr.responseText);
+          return;
+      };
+      // url encode form data for sending as post data
+      var encoded = Object.keys(data).map(function(k) {
+          return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+      }).join('&');
+      xhr.send(encoded);
+    
+      setTimeout(() => {  showSuccess(form); }, 1000);
+    }
+
+
   }
   
   function loaded() {
@@ -87,7 +99,8 @@
   };
   document.addEventListener("DOMContentLoaded", loaded, false);
 
-  function disableAllButtons(form) {
+  function disableAll(form) {
+    var inputs = form.querySelectorAll("input");
     var buttons = form.querySelectorAll("button");
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
@@ -96,6 +109,10 @@
       buttons[i].style.color="#0F161E";
       buttons[i].style.background="#7E98CE";
     }
+
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].disabled = true;
+    }
   }
   function showSuccess(form) {
     var buttons = form.querySelectorAll("button");
@@ -103,4 +120,14 @@
       buttons[i].innerText="Sent!";
     }
   }
+
+  function showText(form,str) {
+    var buttons = form.querySelectorAll("button");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].innerText=str;
+    }
+  }
+
+
+
 })();
