@@ -39,16 +39,6 @@ section
   bottom: 0px;
 }
 
-
-
-/* @media not all and (hover: none) {
-  main
-  {
-    height: 100vh;
-    overflow: hidden;
-  }
-} */
-
 /*------------------------------------------------------------
 Projects Table
 */
@@ -60,6 +50,8 @@ Projects Table
   font-weight: 450;
   color: white;
   border: 0px solid transparent;
+  border-bottom: 1px solid var(--color4);
+
 }
 th
 {
