@@ -43,7 +43,7 @@ th
 
 .year
 {
-  color: var(--color1);
+  font-weight: 550;
 }
 
 itms
@@ -280,7 +280,7 @@ vs
   box-shadow: 0 0px 15px rgba(145, 92, 182, .1);
 }
 
-button a
+a
 {
   color: var(--color1);
   text-decoration: none;
