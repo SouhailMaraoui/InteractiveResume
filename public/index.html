@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="css/loading.css"/>
+
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/animations.css"/>
+    
     <link rel="stylesheet" href="css/style.css"/>
 
     <title>Souhail Maraoui</title>
@@ -19,6 +23,10 @@
     </nav>
 
     <main>
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+
         <div class="content">
             <!--Hi------------------------------------------------------------------------------------------------------------------------------------------------>
             <section id="hi">
@@ -31,7 +39,7 @@
             </section>
 
             <!--About-Me------------------------------------------------------------------------------------------------------------------------------------------>
-            <section id="about">
+            <section class="fade-in" id="about">
                 <h1 class="display-1 px-5"><b>{About me}</b></h1>
                 <hr size="5">
                 <br>
@@ -58,11 +66,11 @@
 
             <!--Featured-Projects--------------------------------------------------------------------------------------------------------------------------------->
             <section id="projects">
-                <h1 class="display-1 px-5"><b>*My Work*</b></h1>
+                <h1 class="display-1 px-5 animatedText"><b>*My Work*</b></h1>
                 <hr size="5">
                 <div class="container">
 
-                    <div class="workItem">
+                    <div class="fade-in workItem">
                         <div class="row">
                             <div class="col-md-8">
                                 <h4 class="projectTitle"><a target="_blank" href="https://github.com/SouhailMaraoui/CoopStats.CoStats/blob/main/README.md">Cooperatives Stats</a></h4>
@@ -123,7 +131,7 @@
                         
                     </div>
                     
-                    <div class="workItem">
+                    <div class="fade-in workItem">
                         <div class="row">
                             <div class="col-md-8">
                                 <h4 class="projectTitle"><a target="_blank" href="https://github.com/SouhailMaraoui/ProtectionCivile/blob/main/README.md">Protection Civile</a></h4>
@@ -149,7 +157,7 @@
                         </div>
                     </div>
                         
-                    <div class="workItem">
+                    <div class="fade-in workItem">
                         <div class="row">
                             <div class="col-md-8">
                                 <h4 class="projectTitle"><a target="_blank" href="https://github.com/SouhailMaraoui/PPMS/blob/main/README.md">Projects Management System</h4></a>
@@ -338,7 +346,11 @@
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
     <script data-cfasync="false" type="text/javascript" src="js/sendEmail.js"></script>
+    <script>
+        
+    </script>
 
   </body>
 </html>

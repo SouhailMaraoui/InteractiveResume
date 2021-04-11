@@ -30,7 +30,7 @@ section
 
 #projects
 {
-  height:250vh;
+  height:220vh;
 }
 
 #contacts {
@@ -228,7 +228,7 @@ vl {
   display: block;
   border-left: 2px solid var(--color4);
   margin-left: 2px;
-  height: 20px;
+  height: 100px;
 }
 vm {
   display: block;
