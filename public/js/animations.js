@@ -28,7 +28,6 @@ window.addEventListener('scroll', function(e) {
 
 
 function fadeOutEffect(target) {
-    console.log("loaded");
     var fadeEffect = setInterval(function () {
         if (!target.style.opacity) {
             target.style.opacity = 1;
@@ -38,9 +37,9 @@ function fadeOutEffect(target) {
         } else {
             clearInterval(fadeEffect);
         }
-    }, 50);
+    }, 15);
 }
 
 window.onload = function(){
-    fadeOutEffect(document.querySelector(".loader-wrapper"));
+    setTimeout(() => {  fadeOutEffect(document.querySelector(".loader-wrapper")); }, 1000);
 };
