@@ -41,5 +41,6 @@ function fadeOutEffect(target) {
 }
 
 window.onload = function(){
-    setTimeout(() => {  fadeOutEffect(document.querySelector(".loader-wrapper")); }, 1000);
+    setTimeout(() => {  fadeOutEffect(document.querySelector(".loader")); }, 100);
+    setTimeout(() => {  fadeOutEffect(document.querySelector(".loader-wrapper")); }, 300);
 };
